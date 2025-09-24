@@ -1,0 +1,103 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>SiTUN Semarang</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+   body {
+     font-family: Cambria;
+   }
+  </style>
+ </head>
+ <body class="bg-[#e6f5ff] min-h-screen flex flex-col justify-between">
+  <!-- Bagian Logo -->
+  <div class="bg-[#d1d0cc] h-24 w-full">
+    <div class="bg-[#9dd2ff] rounded-lg w-500 h-500 flex items-center justify-center">
+      <img alt="Logo PTUN Semarang" class="w-500 h-100 object-contain" height="500" src="LOGOO.jpg" width="500"/>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="px-6 pt-2"> <!-- Jarak lebih dekat ke atas -->
+   <h1 class="text-black font-bold text-lg leading-tight mb-1">
+    Selamat datang di SiTUN Semarang
+   </h1>
+   <h2 class="text-black text-lg leading-tight mb-4">
+    Aplikasi layanan
+   </h2>
+
+   <!-- Poster full lebar tanpa background -->
+   <div class="w-full mb-8">
+     <img src="poster3.jpg" alt="Poster Tolak Gratifikasi" class="w-full h-auto object-cover rounded-md"/>
+   </div>
+
+   <!-- Grid Menu -->
+   <div class="grid grid-cols-3 gap-x-6 gap-y-8 max-w-md mx-auto">
+    <div class="flex flex-col items-center">
+     <div class="bg-[#9dd2ff] rounded-lg w-20 h-20 flex items-center justify-center">
+      <img class="w-16 h-16 object-contain" src="PTSP.jpg" alt="SIPP"/>
+     </div>
+     <span class="mt-2 text-black text-base">
+      <a href="https://sipp.ptun-semarang.go.id/" class="text-items-600 hover:underline">SIPP</a>
+     </span>
+    </div>
+
+    <div class="flex flex-col items-center">
+     <div class="bg-[#9dd2ff] rounded-lg w-20 h-20 flex items-center justify-center">
+      <img class="w-16 h-16 object-contain" src="COURT.jpg" alt="E-Court"/>
+     </div>
+     <span class="mt-2 text-black text-base">
+      <a href="https://share.google/01f9aRRGI61Q366TP" class="text-items-600 hover:underline">E-COURT</a>
+     </span>
+    </div>
+
+    <div class="flex flex-col items-center">
+     <div class="bg-[#9dd2ff] rounded-lg w-20 h-20 flex items-center justify-center">
+      <img class="w-16 h-16 object-contain" src="PTSP.jpg" alt="E-PTSP"/>
+     </div>
+     <span class="mt-2 text-black text-base">
+      <a href="https://ptsp.ptun-semarang.go.id/" class="text-items-600 hover:underline">E-PTSP</a>
+     </span>
+    </div>
+
+    <div class="flex flex-col items-center">
+     <div class="bg-[#9dd2ff] rounded-lg w-20 h-20 flex items-center justify-center">
+      <img class="w-16 h-16 object-contain" src="PPID.jpg" alt="E-PPID"/>
+     </div>
+     <span class="mt-2 text-black text-base">
+      <a href="https://ppid.ptun-semarang.go.id/" class="text-items-600 hover:underline">E-PPID</a>
+     </span>
+    </div>
+
+    <div class="flex flex-col items-center">
+     <div class="bg-[#9dd2ff] rounded-lg w-20 h-20 flex items-center justify-center">
+      <img class="w-16 h-16 object-contain" src="SIWAS.jpg" alt="SIWAS"/>
+     </div>
+     <span class="mt-2 text-black text-base">
+      <a href="https://siwas.mahkamahagung.go.id/" class="text-items-600 hover:underline">SIWAS</a>
+     </span>
+    </div>
+
+    <div class="flex flex-col items-center">
+     <div class="bg-[#9dd2ff] rounded-lg w-20 h-20 flex items-center justify-center">
+      <img class="w-16 h-16 object-contain" src="SURVEY.jpg" alt="Survey IKM & IPAK"/>
+     </div>
+     <span class="mt-2 text-black text-base text-center">
+      <a href="https://ppid.ptun-semarang.go.id/page/survei-ikm-dan-ipak" class="text-items-600 hover:underline">SURVEY IKM DAN IPAK</a>
+     </span>
+    </div>
+   </div>
+  </main>
+<div id="navbar"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+</script>
+ </body>
+</html>
